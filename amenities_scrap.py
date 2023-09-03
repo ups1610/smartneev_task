@@ -90,8 +90,8 @@ class Scrap:
 
 if __name__ == "__main__":
     # paste link here
-    obj = Scrap('https://www.squareyards.com/sale/property-for-sale-in-gurgaon?page=10')  
+    obj = Scrap('https://www.squareyards.com/new-projects-in-gurgaon')  
     obj.conn()
     obj.html_parser()
     data = obj.scrap()
-    obj.data_to_excel('properties_data.csv',data)       
+    obj.data_to_excel('gurgaon_properties.csv',data)       
